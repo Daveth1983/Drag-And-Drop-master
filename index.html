@@ -6,24 +6,100 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <p name="1" class="draggable ddd" draggable="true">Galles</p>
-    <p name="2" class="draggable ddd" draggable="true">Świbodzice</p>
-    <p name="3" class="draggable ddd" draggable="true">Poznań</p>
-    <p name="4" class="draggable ddd" draggable="true">4</p> 
-    <p name="5" class="draggable ddd" draggable="true">5</p>
-    <p name="6" class="draggable ddd" draggable="true">6</p>
-    <p name="7" class="draggable ddd" draggable="true">7</p>
-    <p name="8" class="draggable ddd" draggable="true">8</p>
-    <p name="9" class="draggable ddd" draggable="true">9</p>
 
+
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Wojtek')">Wojtek</button>
+  <button class="tablinks" onclick="openCity(event, 'Maciek')">Maciek</button>
+ <button class="tablinks plus" onclick="alert('dodaje nowego kierowce')">+</button>
+ <button class="tablinks right" onclick="alert('logowanie')">login</button>
+</div>
+
+<!-- Tab content -->
+<div id="Wojtek" class="tabcontent">
+  <input class="data" type="date" name="" id="">
+  <input type="button" value="" class="zatwierdz">
+  <div class="container">
+    <p name="a1" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">Galles</p>
+    
+    <p name="a2" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">Świbodzice</p>
+    <p name="a3" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">Poznań</p>
+    <p name="a4" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">4</p> 
+    <p name="a5" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">5 </p>
+    <p name="a6" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">6</p>
+    <p name="a7" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">7</p>
+    <p name="a8" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">8</p>
+    <p name="a9" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">9</p>
+      
+    <p name="a2" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">Świbodzice</p>
+    <p name="a3" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">Poznań</p>
+    <p name="a4" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">4</p> 
+    <p name="a5" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">5 </p>
+    <p name="a6" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">6</p>
+    <p name="a7" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">7</p>
+    <p name="a8" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">8</p>
+    <p name="a9" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">9</p>
   </div>
+</div>
+
+<div id="Maciek" class="tabcontent">
+  <div class="container">
+    <p name="a1" class="draggable ddd" draggable="true" title="testowy fragment programu">Galles</p>
+    
+    <p name="a2" class="draggable ddd" draggable="true" data-bs-toggle="modal" data-bs-target="#exampleModal">Świbodzice</p>
+    <p name="a3" class="draggable ddd" draggable="true">Poznań</p>
+    <p name="a4" class="draggable ddd" draggable="true">4</p> 
+    <p name="a5" class="draggable ddd" draggable="true" onclick="alert('dasdasdasd')">5 </p>
+    <p name="a6" class="draggable ddd" draggable="true">6</p>
+    <p name="a7" class="draggable ddd" draggable="true">7</p>
+    <p name="a8" class="draggable ddd" draggable="true">8</p>
+    <p name="a9" class="draggable ddd" draggable="true">9</p>
+    <p  name="b2" class="draggable ddd" draggable="true" onclick="alert('fffff')" >asdasd</p>
+  </div>
+</div>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal modal-xl"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ..xxxxwsxwsxwsxwxswxs.<br>
+        xececdedcedcedc<br>
+      cedcecdecedc<br>
+      edcecde<br>
+      edcecdeedc<br>
+      ced<br>
+      cedcedcedce<br>
+      cedcedcedce<br>
+      <input type="text">
+      <input type="button" value="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- <div class="container">
     <p class="draggable" draggable="true">3</p>
     <p class="draggable" draggable="true">4</p> -->
   <!-- </div> -->
 </body>
-</html>
+</html> 

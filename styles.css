@@ -1,11 +1,16 @@
 body {
   margin: 0;
+  position: static;
+background-color: aqua;
 }
 
 .container {
+  width: 100vw;
+ 
   background-color: #333;
   padding: 1rem;
   margin-top: 1rem;
+
 }
 
 .draggable {
@@ -17,4 +22,133 @@ body {
 
 .draggable.dragging {
   opacity: .5;
+}
+
+.container input{
+  background-color: aqua;
+  width:  100vw;
+  text-align: left;
+}
+
+
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  color: white;
+  background-color: #192733;
+  padding: 5px;
+}
+
+.hover-text:hover .tooltip-text {
+  visibility: visible;
+}
+
+.top {
+  top: -40px;
+  left: -50%;
+}
+
+.bottom {
+  top: 25px;
+  left: -50%;
+}
+
+.left {
+  top: -8px;
+  right: 120%;
+}
+
+.right {
+  top: -8px;
+  left: 120%;
+}
+
+.hover-text {
+  position: relative;
+  display: inline-block;
+  margin: 40px;
+  text-align: center;
+}
+
+table{
+  width: 50vw;
+}
+
+/* Style the tab */
+.tab {
+  top:0 ;
+  position: sticky;
+
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  
+}
+
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #dddddd4d;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  top:0;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: navy;
+}
+
+body .tab button.right{
+  float: right;
+  background-color: red;
+}
+
+body .tab button.plus{
+  
+  background-color: green;
+}
+
+.data{
+  position:sticky; 
+  top: 55px; 
+  width: 150px; 
+ 
+  height: 30px; 
+  
+
+}
+
+.zatwierdz{
+  position:sticky; 
+  top: 55px; 
+  width: 150px; 
+  float: right; 
+  height: 30px; 
+  background-color: greenyellow;
+
+}
+
+html{
+  background-color: rgba(255, 255, 32, .4);
 }
