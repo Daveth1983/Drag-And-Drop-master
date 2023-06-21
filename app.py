@@ -10,7 +10,9 @@ def home():
 def nowy():
    return '<h1> to jest nowa strona </h1>'
 
-
+@app.route('/capricorn')
+def capricorn():
+   return 'Capricorn '
 
 if __name__ == '__main__':
    app.run(
