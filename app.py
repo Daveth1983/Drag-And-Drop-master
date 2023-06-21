@@ -6,9 +6,9 @@ def home():
    return render_template('index.html')
 
 
-@app.route('/nowy')
-def nowy():
-   return '<h1> to jest nowa strona </h1>'
+@app.route('/nowy/<zmienna>')
+def nowy(zmienna):
+   return f'<h1> to jest {zmienna} nowa strona </h1>'
 
 @app.route('/capricorn')
 def capricorn():
