@@ -4,7 +4,7 @@ body {
 background-color: aqua;
 }
 
-.container {
+.tabcontent .container {
   width: 25vw;
  
   background-color: #333;
