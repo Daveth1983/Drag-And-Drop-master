@@ -146,10 +146,10 @@ body .tab button.plus{
   width: 150px; 
   float: right; 
   height: 30px; 
-  background-color: greenyellow;
+  background-color:grey;
 
 }
 
 html{
-  background-color: rgba(255, 255, 32, .4);
+  background-color: gainsboro;
 }
